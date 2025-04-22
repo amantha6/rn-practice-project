@@ -18,3 +18,32 @@ node_modules contains dependencies and packages
 App.js is the main entry point of your application
 app.json contains project details and configuration
 babel.config.js handles JavaScript compilation settings
+
+![image](https://github.com/user-attachments/assets/db887c82-6ec5-433a-bbd3-6d8f7c1b4986)
+## Video 2 - Styles and Component Basics
+
+### Key Concepts Covered
+- Styling in CSS vs React Native
+  - React Native simulates CSS properties
+  - Uses different prop names and style differences compared to web CSS
+  
+- Stylesheet API:
+  ```javascript
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }
+  })
+
+
+
+Creating styles using StyleSheet.create() provides an object for styling
+Styles are passed to components using the style prop
+React Native creates separate style objects with different key-value pairs than traditional CSS
+Components within a parent component inherit styles from their parent
+
+
+
