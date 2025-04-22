@@ -46,5 +46,30 @@ Styles are passed to components using the style prop
 React Native creates separate style objects with different key-value pairs than traditional CSS
 Components within a parent component inherit styles from their parent
 
+![image](https://github.com/user-attachments/assets/3d94000d-6157-47b4-82f7-b01dbbfa0e0d)
+
+## Video 4 - Using State to Output Dynamic Content
+
+### Key Concepts Covered
+- Using `useState` hook to manage dynamic content
+  - Syntax: `const [name, setName] = useState('Aditi')`
+  - Updates state using setter function
+  
+- Working with state for:
+  - Simple values (strings)
+  - Complex objects (objects with multiple properties)
+  
+- Click handlers for updating state:
+  ```javascript
+  const clickHandler = () => {
+    setName('Adhira');
+   
+  }
 
 
+
+Implementation
+
+Created dynamic text displays that update when button is clicked
+Managed both simple state (name) and object state (person)
+Added styling for button container with margin
