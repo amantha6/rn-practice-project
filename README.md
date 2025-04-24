@@ -73,3 +73,34 @@ Implementation
 Created dynamic text displays that update when button is clicked
 Managed both simple state (name) and object state (person)
 Added styling for button container with margin
+
+![image](https://github.com/user-attachments/assets/0799ed8a-8362-4ede-a5f7-ed8a1743abfd)
+
+## Video 5 - Text Input Components
+
+### Key Concepts Covered
+- Using the `TextInput` component to collect user input
+  - Syntax: `<TextInput />` (self-closing tag)
+  - Capturing text values through `onChangeText` event handler
+  
+- TextInput Properties:
+  - `placeholder="e.g. JohnDoe"` - Displays hint text when field is empty
+  - `style` - Customize appearance (borders, padding, etc.)
+  - `multiline` - Allows multiple lines of text
+  - `keyboardType="numeric"` - Displays number keyboard for numeric input
+  
+- State Management with TextInput:
+  - Using `onChangeText={(val) => setName(val)}` to update state
+  - Capturing values as the user types
+  - Displaying input values in the UI using state variables
+  
+- Implementation:
+  ```javascript
+  const [name, setName] = useState('');
+  
+  // In your JSX
+  <TextInput 
+    style={styles.input}
+    placeholder='e.g. JohnDoe'
+    onChangeText={(val) => setName(val)}
+  />
