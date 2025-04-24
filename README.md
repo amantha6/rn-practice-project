@@ -125,3 +125,38 @@ Added styling for button container with margin
       <Text>{item.name}</Text>
     </View>
   ))}
+![image](https://github.com/user-attachments/assets/38bff978-73f0-4299-9092-117e522c08f3)
+
+## Video 7 - FlatList Component
+
+### Key Concepts Covered
+- Using FlatList for efficient list rendering
+  - Import: `import { FlatList } from 'react-native'`
+  - Self-closing component: `<FlatList />`
+  
+- Essential FlatList Properties:
+  - `data` - Array of items to render
+  - `renderItem` - Function to render each item: `renderItem={({item}) => ()}`
+  
+- Key Management Options:
+  - FlatList automatically looks for a `key` property in data
+  - For data without a "key" property, use `keyExtractor`:
+    ```javascript
+    keyExtractor={(item) => item.id}
+    ```
+  
+- Advantages over ScrollView:
+  - Better performance for large lists
+  - Only renders items currently visible on screen
+  - Automatic memory management
+  
+- Additional Useful Properties:
+  - `numColumns={2}` - Display data in multiple columns
+  - `horizontal={true}` - Horizontal scrolling list
+  - `marginHorizontal={10}` - Add horizontal margin
+  - `marginTop={24}` - Add top margin
+  
+- Best Practices:
+  - Use FlatList for longer lists or when items come from a database
+  - Use keyExtractor when your data doesn't include a "key" property
+  - Remember that item in renderItem gives you access to the current item being rendered
