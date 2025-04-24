@@ -21,7 +21,7 @@ app.json contains project details and configuration
 babel.config.js handles JavaScript compilation settings
 
 ![image](https://github.com/user-attachments/assets/db887c82-6ec5-433a-bbd3-6d8f7c1b4986)
-## Video 2 - Styles and Component Basics
+## Video 3 - Styles and Component Basics
 
 ### Key Concepts Covered
 - Styling in CSS vs React Native
