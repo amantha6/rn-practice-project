@@ -104,3 +104,24 @@ Added styling for button container with margin
     placeholder='e.g. JohnDoe'
     onChangeText={(val) => setName(val)}
   />
+![image](https://github.com/user-attachments/assets/6d576a7e-2b4e-4f7d-beec-af8a4cb6c582)
+
+## Video 6 - Lists in React Native
+
+### Key Concepts Covered
+- Working with lists of data in React Native
+- Using state to manage array data
+  - Syntax: `const [people, setPeople] = useState([{name: '...', key: '1'}, ...])`
+  - Setting up arrays with key-value pairs
+  
+- Using the map() function to render lists
+  - Syntax: `{people.map(() => {})}`
+  - Iterating through array items to render components
+  
+- Returning JSX templates for each item
+  ```javascript
+  {people.map((item) => (
+    <View key={item.key}>
+      <Text>{item.name}</Text>
+    </View>
+  ))}
